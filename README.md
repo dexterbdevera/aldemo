@@ -1,2 +1,0 @@
-# aldemo
-Thales Airlab Demo
