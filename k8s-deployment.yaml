@@ -32,24 +32,3 @@ spec:
       port: 8000
       targetPort: 8000
   type: LoadBalancer
-
-# ---
-# apiVersion: networking.k8s.io/v1
-# kind: Ingress
-# metadata:
-#   name: python-app-app
-#   annotations:
-#     kubernetes.io/ingress.class: addon-http-application-routing
-# spec:
-#   ingressClassName: python-app-app
-#   rules:
-#   - host: python-django-app.0b7f2fd77f894224b9af.eastus.aksapp.io
-#     http:
-#       paths:
-#         - path: /
-#           pathType: Prefix
-#           backend:
-#             service:
-#               name: python-django-app
-#               port:
-#                 number: 8000
