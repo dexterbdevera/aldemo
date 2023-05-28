@@ -38,7 +38,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: python-app-svc
-  annotation: python-django-app
+  annotations: python-django-app
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
