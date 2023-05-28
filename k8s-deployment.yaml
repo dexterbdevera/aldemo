@@ -44,8 +44,8 @@ spec:
   ingressClassName: python-app-app
   rules:
   - host: python-django-app.0b7f2fd77f894224b9af.eastus.aksapp.io
-      http:
-        paths:
+    http:
+      paths:
         - path: /
           pathType: Prefix
           backend:
