@@ -12,6 +12,7 @@ spec:
       labels:
         app: python-django-app
     spec:
+      terminationGracePeriodSeconds: 30
       containers:
       - name: python-django-app
         image: dexdv/app:latest
