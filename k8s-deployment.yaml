@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: python-django-app-deployment
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: python-django-app
@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: python-django-app
-        image: dexdv/app
+        image: dexdv/app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
