@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: python-django-app
-        image: dexdv/app:latest
+        image: dexdv/app
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
