@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Viewer</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        
+        .container {
+          text-align: center;
+          margin-top: 50px;
+        }
+        
+        h1 {
+          color: #333;
+        }
+        
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+          border-radius: 4px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Technical Challenge</h1>
+    <h1> = API Viewer =</h1>
+    <h3>by Dexter De Vera</h3>
+    <form method="post" action="{% url 'execute_script' %}">
+        {% csrf_token %}
+        <input class=button type="submit" value="SIDs">
+    </form>
+    <form method="post" action="{% url 'execute_script2' %}">
+        {% csrf_token %}
+        <input class=button type="submit" value="STARs">
+    </form>
+    </div>
+</body>
+</html>
