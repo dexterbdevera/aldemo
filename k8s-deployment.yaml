@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-django-app
-        image: dexdv/aks
+        image: dexdv/app
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
