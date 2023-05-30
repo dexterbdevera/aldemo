@@ -1,5 +1,6 @@
-# API Viewer
-
+# API Viewer Web App
+> Powered by Python Django Web Framework
+----
 ## Overview
 
 The API Viewer web application is developed using Python and Django web framework which will be: 
@@ -17,7 +18,7 @@ Below is the complete CI/CD pipeline architecture diagram and workflow that will
 ![image](https://github.com/dexterbdevera/aldemo/assets/90995830/1742feeb-c4da-4883-a463-ef46cd30c662)
 
 ## 💫 About Me:
-just a passionate DevOps and Cloud guy =)
+just a passionate DevOps, Automation and Cloud guy =)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dexterbdevera) 
