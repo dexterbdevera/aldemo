@@ -3,15 +3,15 @@
 ----
 ## Overview
 
-The API Viewer web application is developed using Python and Django web framework.
+The API Viewer web application is developed using `Python` and `Django` web framework.
 
-Jenkins will be the CI/CD tool that has the following stages:
+`Jenkins` will be the CI/CD tool that has the following stages:
 
-- Code Checkout - clone the code from Github.
-- OWASP Dependency Check - code scan to detect publicly disclosed vulnerabilities contained within a project’s dependencies.
-- Docker Build - containerize the webapp with Docker container
-- Docker Push - published the Docker image into DockerHub container registry
-- App Deploy to AKS -  deploy the dockerized webapp as pods into Azure Kubernetes Service (AKS) cluster
+- **Code Checkout** - clone the code from `Github`.
+- **OWASP Dependency Check** - code scan to detect publicly disclosed vulnerabilities contained within a project’s dependencies.
+- **Docker Build** - containerize the webapp with `Docker` container.
+- **Docker Push** - published the Docker image into `DockerHub` container registry.
+- **App Deploy to AKS** -  deploy the dockerized webapp as pods into `Azure Kubernetes Service (AKS) cluster`.
 
 The `python` scripts that will perform the API calls are:
 - SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
@@ -21,7 +21,7 @@ Below is the complete CI/CD pipeline architecture diagram and workflow that will
 
 ![image](https://github.com/dexterbdevera/aldemo/assets/90995830/1742feeb-c4da-4883-a463-ef46cd30c662)
 
-The Azure Kubernetes Service (AKS) cluster is provisioned using Terraform:
+The `Azure Kubernetes Service (AKS)` cluster is provisioned using `Terraform`:
 - [main.tf](https://github.com/dexterbdevera/aldemo/blob/main/terraform/main.tf)
 - [variables.tf](https://github.com/dexterbdevera/aldemo/blob/main/terraform/variables.tf)
 - [secret.tfvars](https://github.com/dexterbdevera/aldemo/blob/main/terraform/secret.tfvars)
