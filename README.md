@@ -17,7 +17,7 @@ The `python` scripts that will perform the API calls are:
 - SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
 - STARs [stars.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/stars.py)
 
-Below is the complete CI/CD pipeline architecture diagram and workflow that will deploy our API Viewer web app into AKS:
+Below is the complete DevSecOps CI/CD pipeline architecture diagram and workflow that will deploy our API Viewer web app into AKS:
 
 ![image](https://github.com/dexterbdevera/aldemo/assets/90995830/1742feeb-c4da-4883-a463-ef46cd30c662)
 
@@ -27,7 +27,7 @@ The `Azure Kubernetes Service (AKS)` cluster is provisioned using `Terraform`:
 - [secret.tfvars](https://github.com/dexterbdevera/aldemo/blob/main/terraform/secret.tfvars)
 
 ## 💫 About Me:
-just a passionate DevOps, Automation and Cloud guy =)
+just a passionate DevSecOps, Automation and Cloud guy =)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dexterbdevera) 
