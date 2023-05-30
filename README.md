@@ -3,11 +3,15 @@
 ----
 ## Overview
 
-The API Viewer web application is developed using Python and Django web framework which will be: 
+The API Viewer web application is developed using Python and Django web framework.
 
-- Containerized with Docker container
-- Published in DockerHub container registry
-- Deployed into Azure Kubernetes Service (AKS) cluster
+Jenkins will be the CI/CD tool that has the following stages:
+
+- Code Checkout - clone the code from Github.
+- OWASP Dependency Check - code scan to detect publicly disclosed vulnerabilities contained within a project’s dependencies.
+- Docker Build - containerize the webapp with Docker container
+- Docker Push - published the Docker image into DockerHub container registry
+- App Deploy to AKS -  deploy the dockerized webapp as pods into Azure Kubernetes Service (AKS) cluster
 
 The `python` scripts that will perform the API calls are:
 - SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
