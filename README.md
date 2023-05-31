@@ -45,7 +45,7 @@ The webapp will serve as a REST client that will send HTTP requests or API calls
 
 ![image](https://github.com/dexterbdevera/aldemo/assets/90995830/05885352-a323-4b1b-a0a3-c2e434884cd3)
 
-The `python` scripts that will perform the API calls are:
+The scripts that will perform the API calls are in `python` language and importing libraries such as `requests`,`dotenv_values` and `pprint`:
 - SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
 - STARs [stars.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/stars.py)
 
