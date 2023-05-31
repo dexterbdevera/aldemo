@@ -5,6 +5,11 @@
 
 The API Viewer web application is developed using `Python` and `Django` web framework.
 
+The webapp will serve as a REST client that will send HTTP requests or API calls, and receive the response in either XML or JSON format.
+
+![image](https://github.com/dexterbdevera/aldemo/assets/90995830/05885352-a323-4b1b-a0a3-c2e434884cd3)
+
+
 `Jenkins` will be the CI/CD tool that has the following stages:
 
 - **Code Checkout** - clone the code from `Github`.
