@@ -3,9 +3,52 @@
 ----
 ## Overview
 
-The API Viewer web application is developed using `Python` and `Django` web framework.
+This project aims to develop an API web application client and implement a CI/CD (Continuous Integration/Continuous Deployment) pipeline to facilitate seamless deployment to a cloud-based Kubernetes environment. 
+
+The client will consume various APIs and provide a user-friendly interface to interact with the backend services. 
+
+The CI/CD pipeline will automate the build, testing, and deployment processes, ensuring rapid and efficient software delivery.
+
+**Goals**:
+- Develop a robust and scalable API web application client that integrates with backend services.
+- Implement a CI/CD pipeline to automate the build, test, and deployment stages.
+- Deploy the client application to a cloud-based Kubernetes cluster for high availability and scalability.
+- Enable seamless updates and rollbacks of the application using the CI/CD pipeline.
+
+**Key Features**:
+- **API Integration**: The client application will consume multiple APIs to retrieve and display relevant data.
+- **User-Friendly Interface**: The client will provide an intuitive interface for users to interact with the backend services.
+- **Automated Testing**: Implement unit tests, integration tests, and end-to-end tests to ensure the application's quality.
+- **Version Control**: Utilize a version control system (e.g., Git) to manage source code and enable collaboration.
+- **CI/CD Pipeline**: Set up an automated pipeline to build, test, and deploy the application to the Kubernetes cluster.
+- **Scalable Deployment**: Deploy the application to a cloud-based Kubernetes environment to leverage scalability and high availability.
+
+**Technology Stack**:
+- **Frontend**: HTML, CSS, Python and Django web framework
+- **Backend APIs**: RESTful APIs 
+- **Version Control**: Git / GitHub
+- **CI/CD Pipeline**: Jenkins
+- **Containerization**: Docker to package the application and its dependencies
+- **Orchestration**: Kubernetes to manage containerized deployments
+- **Cloud Platform**: Microsoft Azure - Azure Kubernetes Cluster
+
+*Project Phases**:
+- **Requirement Gathering**: Understand the client's requirements and define the scope of the project.
+- **Design and Development**: Design the application architecture, develop frontend and backend components, and integrate the APIs.
+- **Testing**: Create and execute various tests to ensure the application functions correctly and meets the requirements.
+- **CI/CD Pipeline Setup**: Configure the CI/CD pipeline, including build triggers, testing automation, and deployment stages.
+- **Kubernetes Deployment**: Set up a cloud-based Kubernetes cluster and deploy the application using containerization techniques.
+- **Monitoring and Maintenance**: Implement monitoring tools and processes to track the application's performance and apply necessary updates or fixes.
+
+**Deliverables**:
+- API web application client with a user-friendly interface.
+- Fully functional CI/CD pipeline for automated build, test, and deployment processes.
+- Deployed application running on a cloud-based Kubernetes cluster.
+- Documentation covering architecture, setup instructions, and maintenance guidelines.
 
 ## Web Application
+
+The API Viewer web application is developed using `Python` and `Django` web framework.
 
 The webapp will serve as a REST client that will send HTTP requests or API calls, and receive the response in either XML or JSON format.
 
@@ -14,6 +57,8 @@ The webapp will serve as a REST client that will send HTTP requests or API calls
 The `python` scripts that will perform the API calls are:
 - SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
 - STARs [stars.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/stars.py)
+
+The data structure used is `python` dictionary & list for faster processing of data.
 
 ## Continuous Integration & Continuous Delivery
 
