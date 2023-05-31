@@ -9,6 +9,9 @@ The webapp will serve as a REST client that will send HTTP requests or API calls
 
 ![image](https://github.com/dexterbdevera/aldemo/assets/90995830/05885352-a323-4b1b-a0a3-c2e434884cd3)
 
+The `python` scripts that will perform the API calls are:
+- SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
+- STARs [stars.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/stars.py)
 
 `Jenkins` will be the CI/CD tool that has the following stages:
 
@@ -17,10 +20,6 @@ The webapp will serve as a REST client that will send HTTP requests or API calls
 - **Docker Build** - containerize the webapp with `Docker` container.
 - **Docker Push** - published the Docker image into `DockerHub` container registry.
 - **App Deploy to AKS** -  deploy the dockerized webapp as pods into `Azure Kubernetes Service (AKS) cluster`.
-
-The `python` scripts that will perform the API calls are:
-- SIDs [sids.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/sids.py)
-- STARs [stars.py](https://github.com/dexterbdevera/aldemo/blob/main/code/src/stars.py)
 
 Below is the complete DevSecOps CI/CD pipeline architecture diagram and workflow that will deploy our API Viewer web app into AKS:
 
